@@ -1,0 +1,1 @@
+DISPLAY=:0 xdotool search --onlyvisible --any midori windowactivate --sync key F5

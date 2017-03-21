@@ -1,0 +1,6 @@
+url="${url:-"https://openqa.opensuse.org?group=openSUSE Tumbleweed\$|openSUSE Leap\$|openSUSE Leap.\*JeOS\$|openSUSE Krypton|openQA&limit_builds=1&time_limit_days=14#build-results"}"
+midori -e Fullscreen -e Navigationbar -e ZoomIn -e ZoomIn -a "$url" &
+sleep 3
+for i in {1..14} ; do
+    xdotool search --onlyvisible --any midori windowactivate --sync key Down
+done
