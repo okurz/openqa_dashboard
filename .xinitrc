@@ -18,6 +18,8 @@ fi
 # X session and X init scripts
 . /etc/X11/xinit/xinitrc.common
 
+xrandr --output VGA-0 --mode 1024x768 --output LVDS --mode 1024x768 --same-as VGA-0
+
 x11vnc -loop -forever -nopw -display :0 -auth guess &
 unclutter &
 $HOME/bin/o3_dashboard
