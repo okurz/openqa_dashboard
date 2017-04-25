@@ -22,7 +22,7 @@ xrandr --output VGA-0 --mode 1024x768 --output LVDS --mode 1024x768 --same-as VG
 
 x11vnc -loop -forever -nopw -display :0 -auth guess &
 unclutter &
-$HOME/bin/o3_dashboard
+$HOME/bin/o3_dashboard &
 
 xset -dpms
 xset s off
