@@ -1,1 +1,5 @@
+DISPLAY=:0 xset -dpms
+DISPLAY=:0 xset s off
+DISPLAY=:0 xset s noblank
+
 DISPLAY=:0 xdotool search --onlyvisible --any midori windowactivate --sync key F5
