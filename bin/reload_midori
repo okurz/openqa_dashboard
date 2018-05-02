@@ -2,4 +2,8 @@ DISPLAY=:0 xset -dpms
 DISPLAY=:0 xset s off
 DISPLAY=:0 xset s noblank
 
-DISPLAY=:0 xdotool search --onlyvisible --any midori windowactivate --sync key F5
+# Since upgrading the machine from openSUSE Tumbleweed 2016... to Tumbleweed 201804... this does not work anymore
+#DISPLAY=:0 xdotool search --onlyvisible --any --classname midori windowactivate --sync key F5
+# workaround by calling xdotool twice
+DISPLAY=:0 xdotool search --onlyvisible --any --classname midori windowactivate
+DISPLAY=:0 xdotool key F5
