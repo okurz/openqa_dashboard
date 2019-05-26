@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if ! xwininfo -all -name midori | grep -q Fullscreen ; then
+	killall -9 midori
+	~/bin/o3_dashboard &
+fi
